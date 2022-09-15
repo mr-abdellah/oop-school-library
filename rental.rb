@@ -6,15 +6,8 @@ class Rental
     @date = date
     @book = book
     @person = person
-  end
 
-  def book=(book)
-    @book = book
-    book.rentals.push(self) unless book.rental.include?(self)
-  end
-
-  def person=(person)
-    @person = person
-    person.rentals.push(self) unless person.rental.include?(self)
+    @person.rentals.push(self)
+    @book.rentals.push(self)
   end
 end
