@@ -11,11 +11,8 @@ class App
   end
 
   def menu
-    puts
     puts 'Welcome to OOP SCHOOL LIBRARY APP!'
-    puts
     puts 'Please choose an option by entering a number :'
-    puts
     puts '1 - List all books'
     puts '2 - List all people'
     puts '3 - Create a person'
